@@ -1,3 +1,5 @@
+my_user_config_settings.h
+user_config_override.h
 Tasmota/
 *.log
 *.bin
