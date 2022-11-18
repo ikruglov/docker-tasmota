@@ -35,7 +35,16 @@
 //#undef  MQTT_PORT
 //#define MQTT_PORT         "MY_USER_CONFIG_SETTINGS"
 
+#undef MQTT_CLIENT_ID
+#define MQTT_CLIENT_ID    "shelly1_%06X"
+
+#undef MQTT_FULLTOPIC
+#define MQTT_FULLTOPIC    "%prefix%/%topic%/"
+
 // -- HTTP ----------------------------------------
+#undef GUI_SHOW_HOSTNAME
+#define GUI_SHOW_HOSTNAME true
+
 #undef USE_EMULATION_HUE
 #undef USE_EMULATION_WEMO
 
