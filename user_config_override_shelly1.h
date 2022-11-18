@@ -10,6 +10,9 @@
 #define USER_TEMPLATE "{\"NAME\":\"Shelly 1\",\"GPIO\":[1,1,0,1,224,192,0,0,0,0,0,0,0,0],\"FLAG\":0,\"BASE\":46}"
 
 // -- Setup your own Wifi settings  ---------------
+#undef WIFI_CONFIG_TOOL
+#define WIFI_CONFIG_TOOL    WIFI_RETRY
+
 //#undef  STA_SSID1
 //#define STA_SSID1         "MY_USER_CONFIG_SETTINGS"
 
