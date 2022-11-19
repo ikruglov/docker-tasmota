@@ -1,6 +1,4 @@
-#ifndef _USER_CONFIG_OVERRIDE_H_
 #define _USER_CONFIG_OVERRIDE_H_
-
 // source https://github.com/arendst/Tasmota/blob/development/tasmota/my_user_config.h
 
 #undef MODULE
@@ -174,8 +172,4 @@
 #undef USE_SPI
 
 // -- Infra Red -----------------------------------
-#ifdef USE_IR_REMOTE
 #undef USE_IR_REMOTE
-#endif
-
-#endif  // _USER_CONFIG_OVERRIDE_H_
