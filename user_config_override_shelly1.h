@@ -41,14 +41,6 @@
 //#undef  MQTT_PORT
 //#define MQTT_PORT         "MY_USER_CONFIG_SETTINGS"
 
-// unset user&pass to connect as ananymous by defaul
-// this gives ability to control new tasmotas via tasmotas/ topic
-#undef MQTT_USER
-#define MQTT_USER         ""
-
-#undef MQTT_PASS
-#define MQTT_PASS         ""
-
 #undef MQTT_CLIENT_ID
 #define MQTT_CLIENT_ID    "shelly1_%06X"
 
