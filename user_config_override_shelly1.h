@@ -52,7 +52,7 @@
 #define MQTT_KEEPALIVE         30
 
 #undef MQTT_POWER_RETAIN
-#define MQTT_POWER_RETAIN      false             // [PowerRetain] Power status message may send retain flag (false = off, true = on)
+#define MQTT_POWER_RETAIN      true            // [PowerRetain] Power status message may send retain flag (false = off, true = on)
 
 // -- HTTP ----------------------------------------
 #undef GUI_SHOW_HOSTNAME
