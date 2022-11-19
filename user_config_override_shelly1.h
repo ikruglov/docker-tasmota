@@ -29,6 +29,7 @@
 //#define NTP_SERVER3       "MY_USER_CONFIG_SETTINGS"
 
 // -- Application ---------------------------------
+#undef APP_POWERON_STATE
 #define APP_POWERON_STATE      POWER_ALL_SAVED  // [PowerOnState] Power On Relay state
                                                 //   (POWER_ALL_OFF, POWER_ALL_ON, POWER_ALL_SAVED_TOGGLE, POWER_ALL_SAVED, POWER_ALL_ALWAYS_ON, POWER_ALL_OFF_PULSETIME_ON)
 
@@ -41,6 +42,14 @@
 
 //#undef  MQTT_PORT
 //#define MQTT_PORT         "MY_USER_CONFIG_SETTINGS"
+
+// unset user&pass to connect as ananymous by defaul
+// this gives ability to control new tasmotas via tasmotas/ topic
+#undef MQTT_USER
+#define MQTT_USER         ""
+
+#undef MQTT_PASS
+#define MQTT_PASS         ""
 
 #undef MQTT_CLIENT_ID
 #define MQTT_CLIENT_ID    "shelly1_%06X"
