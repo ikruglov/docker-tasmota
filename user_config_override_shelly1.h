@@ -28,6 +28,10 @@
 //#undef NTP_SERVER3
 //#define NTP_SERVER3       "MY_USER_CONFIG_SETTINGS"
 
+// -- Application ---------------------------------
+#define APP_POWERON_STATE      POWER_ALL_SAVED  // [PowerOnState] Power On Relay state
+                                                //   (POWER_ALL_OFF, POWER_ALL_ON, POWER_ALL_SAVED_TOGGLE, POWER_ALL_SAVED, POWER_ALL_ALWAYS_ON, POWER_ALL_OFF_PULSETIME_ON)
+
 // -- MQTT ----------------------------------------
 #undef MQTT_USE
 #define MQTT_USE          true
@@ -43,6 +47,12 @@
 
 #undef MQTT_FULLTOPIC
 #define MQTT_FULLTOPIC    "%prefix%/%topic%/"
+
+#undef MQTT_KEEPALIVE
+#define MQTT_KEEPALIVE         30
+
+#undef MQTT_POWER_RETAIN
+#define MQTT_POWER_RETAIN      false             // [PowerRetain] Power status message may send retain flag (false = off, true = on)
 
 // -- HTTP ----------------------------------------
 #undef GUI_SHOW_HOSTNAME
@@ -105,7 +115,11 @@
 #undef USE_DOMOTICZ
 #undef USE_DISCOVERY
 #undef USE_TIMERS
+
+// -- Rules or Script  ----------------------------
 #undef USE_RULES
+#undef USE_SCRIPT
+#undef SUPPORT_MQTT_EVENT
 
 // -- Optional modules ----------------------------
 #undef ROTARY_V1
