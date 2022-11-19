@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm -f firmware/*
 cp local_ca_d* Tasmota/tasmota/include/
 
 if [ -f my_user_config_settings.h ]; then
