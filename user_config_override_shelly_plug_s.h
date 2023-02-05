@@ -1,8 +1,11 @@
+// user_config_override_shelly_plug_s.h
+
 #undef USER_TEMPLATE
 #define USER_TEMPLATE "{\"NAME\":\"Shelly Plug S\",\"GPIO\":[320,1,576,1,1,2720,0,0,2624,32,2656,224,1,4736],\"FLAG\":0,\"BASE\":45}"
 
 // -- OTA
 #ifdef ESP8266
+#undef OTA_URL
 #define OTA_URL "http://firmware.iot.ikruglov.com/tasmota/release/tasmota-shelly-plug-s.bin.gz"
 #endif
 

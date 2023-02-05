@@ -1,3 +1,5 @@
+// user_config_override_shelly1.h
+
 #undef MODULE
 #define MODULE SHELLY1
 
@@ -6,7 +8,8 @@
 
 // -- OTA
 #ifdef ESP8266
-#define OTA_URL                "http://firmware.iot.ikruglov.com/tasmota/release/tasmota-shelly-1.bin.gz"
+#undef OTA_URL
+#define OTA_URL                "http://firmware.iot.ikruglov.com/tasmota/release/tasmota-shelly1.bin.gz"
 #endif
 
 // -- MQTT ----------------------------------------

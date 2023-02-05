@@ -1,3 +1,5 @@
+// user_config_override_shelly_base.h
+
 #define _USER_CONFIG_OVERRIDE_H_
 // source https://github.com/arendst/Tasmota/blob/development/tasmota/my_user_config.h
 

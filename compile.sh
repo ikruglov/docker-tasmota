@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x -e
 
 # Copy this bash script to a directory below /Tasmota and run from there
 
