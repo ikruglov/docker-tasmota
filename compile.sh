@@ -12,7 +12,7 @@ DOCKER_IMAGE=blakadder/docker-tasmota
 
 # Set to `1=true` to use latest stable release tag
 # Set to `0"false` to use `development` branch (default)
-USE_STABLE=0
+USE_STABLE=1
 
 
 ## Check whether Tasmota/ exists and fetch newest Tasmota version from development branch
