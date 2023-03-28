@@ -23,7 +23,53 @@
 //#define NTP_SERVER3       "MY_USER_CONFIG_SETTINGS"
 //
 
+// -- Time - Start Daylight Saving Time and timezone offset from UTC in minutes
+// TimeDst 0,0,3,1,2,120
+#undef TIME_DST_HEMISPHERE
+#define TIME_DST_HEMISPHERE    North             // [TimeDst] Hemisphere (0 or North, 1 or South)
+
+#undef TIME_DST_WEEK
+#define TIME_DST_WEEK          Last              // Week of month (0 or Last, 1 or First, 2 or Second, 3 or Third, 4 or Fourth)
+
+#undef TIME_DST_MONTH
+#define TIME_DST_MONTH         Mar               // Month (1 or Jan, 2 or Feb, 3 or Mar, 4 or Apr, 5 or May, 6 or Jun, 7 or Jul, 8 or Aug, 9 or Sep, 10 or Oct, 11 or Nov, 12 or Dec)
+
+#undef TIME_DST_DAY
+#define TIME_DST_DAY           Sun               // Day of week (1 or Sun, 2 or Mon, 3 or Tue, 4 or Wed, 5 or Thu, 6 or Fri, 7 or Sat)
+
+#undef TIME_DST_HOUR
+#define TIME_DST_HOUR          2                 // Hour (0 to 23)
+
+#undef TIME_DST_OFFSET
+#define TIME_DST_OFFSET        +120              // Offset from UTC in minutes (-780 to +780)
+
+// TimeStd 0,0,10,1,3,60
+#undef TIME_STD_HEMISPHERE
+#define TIME_STD_HEMISPHERE    North             // [TimeStd] Hemisphere (0 or North, 1 or South)
+
+#undef TIME_STD_WEEK
+#define TIME_STD_WEEK          Last              // Week of month (0 or Last, 1 or First, 2 or Second, 3 or Third, 4 or Fourth)
+
+#undef TIME_STD_MONTH
+#define TIME_STD_MONTH         Oct               // Month (1 or Jan, 2 or Feb, 3 or Mar, 4 or Apr, 5 or May, 6 or Jun, 7 or Jul, 8 or Aug, 9 or Sep, 10 or Oct, 11 or Nov, 12 or Dec)
+
+#undef TIME_STD_DAY
+#define TIME_STD_DAY           Sun               // Day of week (1 or Sun, 2 or Mon, 3 or Tue, 4 or Wed, 5 or Thu, 6 or Fri, 7 or Sat)
+
+#undef TIME_STD_HOUR
+#define TIME_STD_HOUR          3                 // Hour (0 to 23)
+
+#undef TIME_STD_OFFSET
+#define TIME_STD_OFFSET        +60               // Offset from UTC in minutes (-780 to +780)
+
+// -- Location ------------------------------------
+#define LATITUDE               52.378351         // [Latitude] Your location to be used with sunrise and sunset
+#define LONGITUDE              4.899707          // [Longitude] Your location to be used with sunrise and sunset
+
 // -- Application ---------------------------------
+#undef APP_TIMEZONE
+#define APP_TIMEZONE           99                 // [Timezone] +1 hour (Amsterdam) (-13 .. 14 = hours from UTC, 99 = use TIME_DST/TIME_STD)
+
 #undef APP_POWERON_STATE
 #define APP_POWERON_STATE      POWER_ALL_SAVED  // [PowerOnState] Power On Relay state
                                                 //   (POWER_ALL_OFF, POWER_ALL_ON, POWER_ALL_SAVED_TOGGLE, POWER_ALL_SAVED, POWER_ALL_ALWAYS_ON, POWER_ALL_OFF_PULSETIME_ON)
