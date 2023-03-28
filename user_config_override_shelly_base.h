@@ -63,7 +63,9 @@
 #define TIME_STD_OFFSET        +60               // Offset from UTC in minutes (-780 to +780)
 
 // -- Location ------------------------------------
+#undef LATITUDE
 #define LATITUDE               52.378351         // [Latitude] Your location to be used with sunrise and sunset
+#undef LONGITUDE
 #define LONGITUDE              4.899707          // [Longitude] Your location to be used with sunrise and sunset
 
 // -- Application ---------------------------------
